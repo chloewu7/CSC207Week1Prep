@@ -30,5 +30,41 @@ class FizzBuzz {
 
             }
         }
+
+        /*
+        While Loop Version of Fizz Buzz (written as practice)
+         */
+
+        int i = 1;
+        while (i < 100) {
+
+            i = doFizzBuzz(i);
+
+        }
+    }
+
+    private static int doFizzBuzz(int i) {
+        boolean diviBy3 = i % 3 == 0;
+        boolean diviBy5 = i % 5 == 0;
+
+        if(diviBy3 && diviBy5) {
+
+            System.out.println("Fizz Buzz");
+
+    } else if (diviBy5) {
+
+            System.out.println("Buzz");
+
+        } else if (diviBy3) {
+
+            System.out.println("Fizz");
+
+        } else {
+
+            System.out.println(i);
+        }
+
+        i++;
+        return i;
     }
 }
