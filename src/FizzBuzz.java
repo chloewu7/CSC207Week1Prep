@@ -32,7 +32,7 @@ class FizzBuzz {
         }
 
         /*
-        While Loop Version of Fizz Buzz (written as practice)
+        The While Loop Version of Fizz Buzz (written as practice)
          */
 
         int i = 1;
